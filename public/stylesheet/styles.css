@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+}
+
+.navul {
+    display: flex;
+    justify-content: space-around;
+    border: 4px solid dodgerblue;
+    border-radius: 0 0 20px 20px;
+    background-color: #fff;
+    list-style: none;
+    padding: 2%;
+}
+
+.navitem {
+    border: 2px solid dodgerblue;
+    padding: 2%;
+    min-width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.navitem:hover {
+    transform: translateY(-4px);
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.navitem:active {
+    transform: translateY(0);
+}
+
+.navitem > a:link,
+.navitem > a:active {
+    font-size: 1.6rem;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.navitem > a:visited {
+    font-size: 1.6rem;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    color: dodgerblue;
+}
+
+.title {
+    font-size: 3.4rem;
+    margin-bottom: 5.6rem;
+}
+
+.home-p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.home-p:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+.jules-img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.about-p {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.workslist {
+    margin-top: 5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.worksitem:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
